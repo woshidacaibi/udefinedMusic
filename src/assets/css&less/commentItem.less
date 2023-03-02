@@ -1,0 +1,57 @@
+li {
+  display: flex;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--hover-color);
+  max-width: 750px;
+  margin: 0 auto;
+}
+.avatar {
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+.comment-main {
+  flex: 1;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.comment-reply {
+  .tip {
+    color: var(--hover-more-color);
+    font-size: 13px;
+  }
+}
+.vip {
+  height: 20px;
+  line-height: 20px;
+  font-size: 17px;
+  color: var(--theme-color);
+  img {
+    height: 15px;
+    margin-left: 5px;
+    transform: translateY(1.5px);
+  }
+}
+.operate-button {
+  font-size: 14px;
+  color: var(--hover-more-color);
+  .icon-dianzan_kuai {
+    color: var(--theme-color);
+  }
+  i {
+    margin: 0 5px 0 20px;
+  }
+  span:last-child {
+    margin-left: 30px;
+  }
+}
+.dianzan:hover {
+  cursor: pointer;
+}
+i:hover {
+  color: var(--theme-color);
+  transition: color 0.3s;
+  cursor: pointer;
+}

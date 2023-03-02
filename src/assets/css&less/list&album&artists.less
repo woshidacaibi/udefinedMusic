@@ -1,0 +1,93 @@
+.view-container {
+  margin-left: 6px;
+  margin-top: 6px;
+  margin-bottom: 80px;
+
+}
+.message-box {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.el-skeleton {
+  width: auto;
+}
+.left-img {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  margin: 0 20px;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+.right-message {
+  flex: 1;
+  margin-right: 50px;
+  transition: all 0.2s;
+}
+.name {
+  display: flex;
+}
+.type-name {
+  margin-top: 4px;
+  border: 1px solid var(--theme-color);
+  color: var(--theme-color);
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  width: 45px;
+  height: 30px;
+  line-height: 30px;
+}
+.owner {
+  margin-top: 10px;
+}
+.owner-name {
+  margin-left: 10px;
+  line-height: 30px;
+  float: left;
+  color: #507daf;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.owner-name:hover {
+  color: var(--theme-color);
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  float: left;
+  cursor: pointer;
+}
+.operate-button {
+  margin-top: 10px;
+  i {
+    margin-right: 5px;
+  }
+}
+.create-time {
+  margin-left: 10px;
+  line-height: 30px;
+  float: left;
+  font-size: 13px;
+}
+.other-message {
+  margin-top: 10px;
+  span {
+    padding-right: 10px;
+    font-size: 14px;
+  }
+  div{
+    font-size: 14px;
+    margin-left: 5px;
+    color: var(--hover-more-color);
+  }
+}
+.brief-intro {
+  max-width: 750px;
+}
+.brief-intro.overflow {
+  -webkit-line-clamp: 2;
+}

@@ -1,0 +1,93 @@
+h2 {
+  margin-left: 20px;
+}
+.video-area {
+  margin-top: 30px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.video {
+  flex: 1;
+  max-width: 750px;
+  border: 1px solid #cccccc;
+}
+.recommend {
+  width: 300px;
+  padding-left: 100px;
+  height: 0;
+  flex-shrink: 0;
+  margin-right: 30px;
+  display: none;
+}
+.video-message {
+  margin-top: 30px;
+}
+.video-author {
+  float: left;
+}
+.author-img {
+  float: left;
+  margin-left: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+.author-img:hover {
+  transform: scale(1.2);
+}
+.author-name {
+  display: inline-block;
+  line-height: 40px;
+  margin-left: 10px;
+  transition: color 0.5s;
+  font-size: 16px;
+}
+.author-name:hover {
+  color: var(--theme-color);
+}
+.other-message {
+  height: 40px;
+  float: right;
+  span {
+    margin-left: 10px;
+    line-height: 40px;
+    color: var(--hover-more-color);
+    font-size: 14px;
+  }
+}
+.video-desc {
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 14px;
+  color: var(--hover-more-color);
+  -webkit-line-clamp: 3;
+}
+.operate-button {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.video-comment {
+  margin-left: 30px;
+  margin-top: 40px;
+  width: 100%;
+}
+h3 {
+  position: absolute;
+  top: -30px;
+}
+@media screen and (min-width: 1080px) {
+  .recommend {
+    display: block;
+  }
+  .video-comment {
+    width: calc(100% - 400px);
+  }
+  .video-desc {
+    width: calc(100% - 400px);
+  }
+  .video-message{
+    width: calc(100% - 400px);
+  }
+}

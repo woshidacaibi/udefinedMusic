@@ -1,0 +1,40 @@
+.reco-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.place {
+  height: 50px;
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  li {
+    float: left;
+    margin-top: 12.5px;
+    height: 30px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 3px 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  li:hover {
+    background-color: var(--hover-color);
+    color: var(--theme-color);
+  }
+}
+.active {
+  color: var(--theme-color);
+}
+.toMore {
+  position: absolute;
+  right: 0;
+  top: 12px;
+  width: 80px;
+  margin: 0 auto;
+  text-align: center;
+  transition: color 0.5s;
+}
+.toMore:hover {
+  color: var(--theme-color);
+}

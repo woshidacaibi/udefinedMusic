@@ -1,0 +1,65 @@
+li {
+  width: 100%;
+  height: 30px;
+  transition: background-color 0.3s;
+  border-radius: 2px ;
+}
+li:nth-child(2n + 1) {
+  background-color: var(--hover-light-color);
+}
+li:hover {
+  background-color: var(--hover-color);
+}
+li.playing {
+  background-color: var(--theme-color);
+}
+.playing:hover {
+  background-color: var(--theme-color);
+  a:hover {
+    color: var(--color-text);
+  }
+}
+span {
+  display: -webkit-box;
+  float: left;
+  padding-left: 6px;
+  height: 30px;
+  line-height: 30px;
+}
+a:hover {
+  color: var(--theme-color);
+  transition: color 0.3s;
+}
+.operate {
+  display: flex;
+  i {
+    margin: 0 3px;
+  }
+  i:hover {
+    color: var(--theme-color);
+    transition: color 0.3s;
+  }
+  .icon-xihuan {
+    color: var(--theme-color);
+  }
+  b {
+    margin-right: 10px;
+  }
+}
+.song-name {
+  display: flex;
+  align-items: center;
+}
+.tag {
+  flex-shrink: 0;
+  margin: 0 3px;
+  height: 16px;
+  font-size: 13px;
+  width: 30px;
+  line-height: 15px;
+  border: 1px solid var(--theme-color);
+  color: var(--theme-color);
+  border-radius: 5px;
+  text-align: center;
+}
+

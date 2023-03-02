@@ -1,0 +1,27 @@
+import { createApp } from 'vue';
+import LoadImg from '@/basic/LoadImg.vue';
+import LoadingTip from '@/basic/LoadingTip.vue';
+import ThemeButton from '@/basic/ThemeButton.vue';
+import ScrollBar from '@/basic/ScrollBar.vue';
+import ErrorTip from '@/basic/ErrorTip.vue';
+import noMoreTip from '@/basic/NoMoreTip.vue';
+import dayIcon from '@/basic/dayIcon.vue';
+import MySwiper from '@/basic/MySwiper.vue';
+import App from '@/App.vue';
+import router from '@/router';
+import index from '@/stores';
+import 'element-plus/dist/index.css';
+import '@/assets/css&less/main.less';
+
+const app = createApp(App);
+app.use(index);
+app.use(router);
+app.component('LoadImg', LoadImg);
+app.component('LoadingTip', LoadingTip);
+app.component('ThemeButton', ThemeButton);
+app.component('ScrollBar', ScrollBar);
+app.component('ErrorTip', ErrorTip);
+app.component('noMoreTip', noMoreTip);
+app.component('dayIcon', dayIcon);
+app.component('MySwiper', MySwiper);
+app.mount('#app');

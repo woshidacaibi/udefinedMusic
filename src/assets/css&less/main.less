@@ -1,0 +1,117 @@
+@import './base.css';
+@import "extend/iconfont.css";
+@import "extend/dplayer.less";
+a{
+  text-decoration: none;
+  color: var(--color-text);
+}
+i{
+  font-style: normal;
+  cursor: pointer;
+  text-align: center;
+}
+b{
+  font-weight: normal;
+}
+li{
+  list-style: none;
+}
+ul{
+  padding-inline-start:0;
+}
+span{
+  display: inline-block;
+}
+button{
+  border: none;
+  background-color: var(--theme-color);
+  cursor: pointer;
+  color: white;
+  transform: scale(0.95,0.95);
+  transition: all 0.2s;
+}
+button:hover{
+  //background-color: var(--theme-color);
+  transform: scale(1,1);
+}
+*{
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+  'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  user-select: none;
+}
+.clearfix:after{
+  content: "";
+  display: block;
+  height: 0;
+  clear:both;
+  visibility: hidden;
+}
+.clearfix{
+  *zoom: 1;/*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+}
+.overflow{
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+  -webkit-line-clamp:1;    /* 根据业务需求设置第几行显示省略号 */
+}
+:root{
+  --theme-color:#eea2a4;
+  --container-color:white;
+  --valid-color:#507daf;
+  --hover-color: rgba(0, 0, 0, 0.06);
+  --hover-more-color: rgba(0, 0, 0, 0.35);
+  --hover-light-color: rgba(0, 0, 0, 0.03);
+  --unuse-color:rgba(0, 0, 0, 0.30);
+  --unimport-text-color:rgba(0, 0, 0, 0.45);
+  --layout-border-color:rgb(0 0 0 / 8%);
+  --el-color-primary:var(--theme-color);
+  --el-border-color:var(--layout-border-color);
+  --el-menu-hover-text-color: var(--theme-color);
+  --el-menu-hover-bg-color: var(--hover-color);
+  --el-fill-color-blank:var(--container-color);
+}
+.scale-block{
+  transform: scale(0.95,0.95);
+  box-sizing: content-box;
+  transition: all 0.2s;
+}
+.scale-block:hover{
+  transform: scale(1,1);
+}
+
+.alia{
+  color: var(--hover-more-color);
+}
+.empty{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+.introduce{
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  h3{
+    font-size: 17px;
+    font-weight: bold;
+  }
+  p{
+    margin-left:30px ;
+    margin-top: 5px;
+    color: var(--hover-more-color);
+  }
+}
+.no-introduce{
+  text-align: center;
+  margin-top: 90px;
+  color: var(--hover-more-color);
+}
+.icon-icon2 {
+  color: deeppink;
+}
+.icon-icon3 {
+  color: deepskyblue;
+}
+
+@import "extend/element_plus";

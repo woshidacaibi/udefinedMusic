@@ -1,0 +1,37 @@
+.playlists-header {
+  width: 100%;
+  margin-top: 80px;
+  height: 30px;
+  span {
+    float: left;
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  .type-change {
+    float: right;
+    margin-right: 100px;
+    i {
+      margin: 0 5px;
+    }
+  }
+}
+.type-3 {
+  max-width: 1080px;
+  margin: 30px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+i {
+  transition: color 0.3s;
+}
+i:hover {
+  color: var(--theme-color);
+}
+.active {
+  color: var(--theme-color);
+}
+.el-pagination {
+  margin-top: 5px;
+}

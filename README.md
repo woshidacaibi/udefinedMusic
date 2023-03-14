@@ -1,25 +1,20 @@
-# project
+# 不知名的音乐软件
 
-This template should help get you started developing with Vue 3 in Vite.
+此项目采用vue3+vite+pinia+ts；注重的是练习
 
-## Recommended IDE Setup
+## 体验地址：
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+```
+http://music.xchsg.top/
+```
 
-## Type Support for `.vue` Imports in TS
+## 注意事项：
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+这个接口用的是网上的网易云接口，所以有时候会不稳定，**必须登录才能保证功能正常**，其中登录接口账号密码/验证码登录暂时失效**请使用二维码登录**
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+最后如果您喜欢这个项目请给个star，感谢
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Finally, if you like this project, please give a star, thank you
 
 ## Project Setup
 

@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import {createRouter, createWebHashHistory, createWebHistory} from 'vue-router';
 import { findScroll } from '@/hooks/scroll';
 const scroll = findScroll('main');
 import index from '@/stores';
@@ -6,7 +6,7 @@ import { playerStore } from '@/stores/audioPlayer';
 import { storeToRefs } from 'pinia';
 const { pause } = storeToRefs(playerStore(index));
 const router = createRouter({
-  history: createWebHashHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',

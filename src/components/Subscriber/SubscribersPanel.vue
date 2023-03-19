@@ -24,9 +24,9 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 import { getSubscribers } from '@/hooks/playlist';
-import { scrollStore } from '@/stores/panelStaus';
 import UserBlockItem from '@/components/SingleItem/user/userBlockItem.vue';
-const { backToTop } = scrollStore();
+import { backToTop } from '@/hooks/scroll';
+import { ElMessage } from 'element-plus';
 const props = defineProps<{ itemId: number | string; type: number }>();
 const pageSize = ref(60);
 const pageNum = ref(1);
@@ -36,12 +36,18 @@ const error = ref(false);
 if (props.type === 2) {
   getPlaylistSub();
 }
-function pageChange() {
+async function pageChange() {
   backToTop('main');
-  getPlaylistSub();
+  const info = ElMessage.info({
+    message: '加载中...',
+    duration: 0,
+  });
+  await getPlaylistSub();
+  info.close();
 }
 async function getPlaylistSub() {
   const offset = (pageNum.value - 1) * pageSize.value;
+  info.value = [];
   const res = await getSubscribers({
     id: props.itemId,
     limit: pageSize.value,

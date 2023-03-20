@@ -166,10 +166,9 @@ export async function getUserLevel() {
   } else return false;
 }
 
-export let city: any = null;
-localAxios.get('src/assets/city.json').then((res) => {
-  city = res.data;
-});
+import c from '@/assets/city.json';
+
+export const city:any = c;
 
 //获取省份
 export function getProvince(code: number | string) {

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite --host 192.168.20.165",
+    "dev": "vite --host 192.168.123.165",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
     "build-only": "vite build",

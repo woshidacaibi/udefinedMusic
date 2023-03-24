@@ -6,7 +6,7 @@ import { playerStore } from '@/stores/audioPlayer';
 import { storeToRefs } from 'pinia';
 const { pause } = storeToRefs(playerStore(index));
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
